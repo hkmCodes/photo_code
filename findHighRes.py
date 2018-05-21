@@ -47,7 +47,7 @@ def sort(to_fldr, frm_fldr_parent, frm_fldr_child):
 			origFile = os.path.join(k,file)
 			if file in newValSet:
 				print "Copying - origFile: %s, sel_fldr: %s" %(origFile, sel_fldr)
-				shutil.copy(origFile, sel_fldr)				
+				shutil.copy2(origFile, sel_fldr)				
 
 ## DEPRECATED FUNCTION - to be transferred to another code file		
 def tillSecondUnderscore(filename):
